@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact - Leonardo Da Vinci</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			.form{
+				padding: 30px 20%;
+				font-size: 20px;
+			}
+			.form input{
+				height: 25px;
+				border-style: solid;
+				border-radius: 5px 5px;
+				border-color: #000;
+			}
+			.form textarea{
+				border-style: solid;
+				border-radius: 5px;
+				border-color: #000;
+				height: 150px;
+			}
+			.form select{
+				border-style: solid;
+				border-radius: 5px;
+				border-color: #000;
+				width: 200px;
+			}
+			.form .box input{
+				height: 40px;
+				width: 100px;
+				background-color: #09C;
+				cursor:pointer;
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body class="body">
+		<header class="header">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="personal.html">Personal Life</a></li>
+					<li><a href="professional.html">Professional Life</a></li>
+					<li><a href="inventions.html">Inventions</a></li>
+					<li><a href="arts.html">Arts</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="form">
+				<!-- This is the contact form -->
+				<form name="contactForm" class="contactForm" onreset="resetMessage()">
+					First name:<br>
+					<input type="text" id="firstname" name="firstname" required size="40" onfocus="inputColor(this)">
+					<br>Last name:<br>
+					<input type="text" id="lastname" name="lastname" required size="40" onfocus="inputColor(this)">
+					<br>Email:<br>
+					<input type="email" id="email" name="email" required size="40" onfocus="inputColor(this)">
+					<br>Select Catagory<br>
+					<select required>
+						<option value="contact">Contact Admin</option>
+						<option value="feed">Feedback</option>
+						<option value="deal">Business Deal</option>
+					</select>
+					<br>Feedback:<br>
+					<textarea cols="30" onfocus="inputColor(this)"></textarea>
+					<div class="box">
+						<input type="reset" value="Reset" />
+						<input type="submit" value="Submit" onclick="formValidate()" /> 
+					</div>
+				</form>
+			</div>
+			<footer class="footer">
+				Copyright &copy; 2015 <a href="#">Arjun Gurung</a>
+
+				<!-- This is the image mao for social links -->
+				<img src="img/social.png" alt="Social Links" usemap="#social" align="right">
+				<map name="social">
+	  				<area shape="circle" coords="23,28,19" href="http://plus.google.com" alt="google+">
+	  				<area shape="circle" coords="54,28,19" href="http://twitter.com" alt="Twitter">
+	  				<area shape="circle" coords="81,28,19" href="http://www.facebook.com" alt="facebook">
+	  				<area shape="circle" coords="121,28,19" href="http://www.linkedin.com" alt="Linkedin">
+				</map> 
+			</footer>
+		</div>
+	<script src="javascript/javascript.js"></script>
+	</body>
+</html>

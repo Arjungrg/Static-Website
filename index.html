@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home - Leonardo Da Vinci</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			/*This is the property for heading*/
+			h1{
+				padding-top: 80px;
+			}
+
+			/*This is the property for paragraph*/
+			p{
+				color: #FFFFFF;
+				padding:5px 30%;
+				font-size: 20px;
+				word-spacing: 1px;
+			}
+
+			/*This is the property for the readmore button*/
+			#readMore a{
+				background-color: red;
+				width: 100px;
+				color: #FFFFFF;
+				padding: 10px;
+				margin:5px 30%;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<!-- This is the body of the home page -->
+	<body class="body">
+		<h1 style="color:#FFF;">Biography of Leonardo da Vinci</h1>
+		<p>
+			Leonardo di ser Piero da Vinci, more commonly known as Leonardo da Vinci, was an Italian polymath. He was a painter, sculptor, architect, musician, mathematician, engineer, inventor, anatomist, geologist, cartographer, botanist, and writer.
+		</p>
+
+		<!-- This displays date in the webpage -->
+		<p>Date: <span id="todayDate"></span></p>
+		<div id="readMore">
+			<a href="personal.html" onmouseover="mouse_over(this)" onmouseout="mouse_out(this)">Read More</a>
+		</div>
+
+		<!-- This imports the external javascript file -->
+		<script src="javascript/javascript.js"></script>
+		<script type="text/javascript">
+		todayDate();
+		</script>
+	</body>
+</html>

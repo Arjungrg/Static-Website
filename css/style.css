@@ -1,0 +1,175 @@
+/* Body style, backgroud image, font color, font size are defined here*/
+   
+body {
+	background-image: url(../img/leo.jpg);
+	vertical-align: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	padding-top: 1%;
+	}
+/**Paragraph Style, font type for paragraph and alignent are defind**/
+p{
+	font-family:'Trebuchet MS', Arial, sans-serif; 
+	text-align: justify;
+	}
+/**Style for H1 heading, font size and alignment is defined here**/ 
+h1{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+/*Styling for image. Padding is given*/
+img{
+	padding: 10px 25px;
+}
+
+/* body class is defined to give the width of the body of website*/
+.body {
+	clear: both; 
+	margin: 0 auto; 
+	width: 90%;
+}
+
+/*Class to clear the float property for new div*/
+.clear{
+	clear: both;
+}
+
+/* ===========================
+   ======= Anchor style ====== 
+   =========================== */
+a {
+	outline: 0;
+	}
+
+/*Style for visited link*/
+
+a:link, a:visited {
+	color: #CF5C3F;
+	padding: 0 1px;
+	text-decoration: none;
+}
+
+/*Style for hovered link and active link*/
+a:hover, a:active {
+	background-color: #CF5C3F;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ===========================
+   ===== Main Navigation ===== 
+   =========================== */
+   /* class to define the background, font size height and text alignment of the navigation bar*/
+   
+.header nav {
+	background: #66CCCC;
+	font-size: 20px;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+/*Class to give the property for unorder list*/	
+.header nav ul {
+	list-style: none; 
+	margin: 0 auto;
+}
+
+/*Class to give style for list item of unorder list*/
+.header nav ul li {
+	float: left; 
+	display: inline; 
+}
+	
+
+	/*Class to give style for links of nevigation bar. font color, height and padding is defined */
+.header nav a:link, .header nav a:visited {
+	color: #000;
+	display: inline-block;
+	height: 30px;
+	padding: 5px 23px;
+	text-decoration: none;
+}
+
+/*Css properties is added for navigation when it is hovered, active and visited*/
+.header nav a:hover, .header nav a:active,
+.header nav .active a:link, .header nav .active a:visited {
+	background: #6699CC;
+	color: #fff;
+	text-shadow: none !important;
+}
+
+/* ===========================
+   ======= Content Area ====== 
+   =========================== */
+
+/*This class mainly defines the background color of the content*/
+.container {
+	overflow: hidden;
+	line-height: 25px;
+	background-color: #FFF;
+}
+
+/*Css propretise given to the content which are at the top. Padding is given*/
+.topContent {
+	
+	padding: 3% 5%;	
+}
+
+/*Css properties is added to the content which lies at the bottom of website*/
+.bottomContent {
+	background-color: #FFF;		
+	padding: 3% 2%;
+	text-align: justify;
+}
+
+/*The width of top content is definfed*/
+.content {
+	width: 39%;
+	float: left;
+}
+
+/*Class to define the width of the sidebar*/
+.sideContent{
+	width: 19%;
+	box-shadow: 5px;
+	float: left;
+	padding: 2% 1%;
+}
+/* ===========================
+   ========= Footer ========== 
+   =========================== */
+/*footer width, background and font color*/
+.footer {
+	width: 100%;
+	text-align: center;
+	padding:5px;
+	background-color: #66CCCC;
+	color: #222;
+	float: left;
+}
+
+/* for footer link color*/
+.footer a {
+	color: #555;
+}
+
+/*for footer link color during hover*/
+
+.footer a:hover {
+	color: #999;
+	background: transparent;
+}
+
+/*for form in contact page*/
+.contactForm{
+	font-family: Tahoma, Geneva, sans-serif;
+}
